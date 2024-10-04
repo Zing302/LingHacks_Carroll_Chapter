@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linghacks-Southlake</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+      
+      @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+      
+      /*! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com*/
+      *,
+      :after,
+      :before {
+        border: 0 solid #e5e7eb;
+        box-sizing: border-box;
+      }
+      :after,
+      :before {
+        --tw-content: "";
+      }
+      :host,
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        font-family:
+          Open Sans,
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          Apple Color Emoji,
+          Segoe UI Emoji,
+          Segoe UI Symbol,
+          Noto Color Emoji;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        line-height: inherit;
+        margin: 0;
+      }
+      hr {
+        border-top-width: 1px;
+        color: inherit;
+        height: 0;
+      }
+      abbr:where([title]) {
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          Liberation Mono,
+          Courier New,
+          monospace;
+        font-feature-settings: normal;
+        font-size: 1em;
+        font-variation-settings: normal;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        border-collapse: collapse;
+        border-color: inherit;
+        text-indent: 0;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        color: inherit;
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-size: 100%;
+        font-variation-settings: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      input:where([type="button"]),
+      input:where([type="reset"]),
+      input:where([type="submit"]) {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: baseline;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+      }
+      fieldset,
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dialog {
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: #9ca3af;
+        opacity: 1;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        height: auto;
+        max-width: 100%;
+      }
+      [hidden] {
+        display: none;
+      }
+      *,
+      :after,
+      :before {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      #lingHacksSouthlake .fixed {
+        position: fixed;
+      }
+      #lingHacksSouthlake .relative {
+        position: relative;
+      }
+      #lingHacksSouthlake .left-0 {
+        left: 0;
+      }
+      #lingHacksSouthlake .right-0 {
+        right: 0;
+      }
+      #lingHacksSouthlake .top-0 {
+        top: 0;
+      }
+      #lingHacksSouthlake .z-10 {
+        z-index: 10;
+      }
+      #lingHacksSouthlake .z-50 {
+        z-index: 50;
+      }
+      #lingHacksSouthlake .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #lingHacksSouthlake .mb-10 {
+        margin-bottom: 40px;
+      }
+      #lingHacksSouthlake .mb-12 {
+        margin-bottom: 48px;
+      }
+      #lingHacksSouthlake .mb-6 {
+        margin-bottom: 24px;
+      }
+      #lingHacksSouthlake .mb-8 {
+        margin-bottom: 32px;
+      }
+      #lingHacksSouthlake .mt-12 {
+        margin-top: 48px;
+      }
+      #lingHacksSouthlake .mt-6 {
+        margin-top: 24px;
+      }
+      #lingHacksSouthlake .mt-8 {
+        margin-top: 32px;
+      }
+      #lingHacksSouthlake .mt-\[-40px\] {
+        margin-top: -40px;
+      }
+      #lingHacksSouthlake .mt-\[96px\] {
+        margin-top: 96px;
+      }
+      #lingHacksSouthlake .inline-block {
+        display: inline-block;
+      }
+      #lingHacksSouthlake .flex {
+        display: flex;
+      }
+      #lingHacksSouthlake .grid {
+        display: grid;
+      }
+      #lingHacksSouthlake .h-2 {
+        height: 8px;
+      }
+      #lingHacksSouthlake .h-\[300px\] {
+        height: 300px;
+      }
+      #lingHacksSouthlake .h-\[700px\] {
+        height: 700px;
+      }
+      #lingHacksSouthlake .min-h-\[800px\] {
+        min-height: 800px;
+      }
+      #lingHacksSouthlake .w-48 {
+        width: 192px;
+      }
+      #lingHacksSouthlake .w-\[1240px\] {
+        width: 1240px;
+      }
+      #lingHacksSouthlake .w-\[280px\] {
+        width: 280px;
+      }
+      #lingHacksSouthlake .w-\[600px\] {
+        width: 600px;
+      }
+      #lingHacksSouthlake .w-full {
+        width: 100%;
+      }
+      #lingHacksSouthlake .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      #lingHacksSouthlake .flex-row {
+        flex-direction: row;
+      }
+      #lingHacksSouthlake .flex-wrap {
+        flex-wrap: wrap;
+      }
+      #lingHacksSouthlake .items-center {
+        align-items: center;
+      }
+      #lingHacksSouthlake .justify-center {
+        justify-content: center;
+      }
+      #lingHacksSouthlake .justify-between {
+        justify-content: space-between;
+      }
+      #lingHacksSouthlake .gap-4 {
+        gap: 16px;
+      }
+      #lingHacksSouthlake .gap-6 {
+        gap: 24px;
+      }
+      #lingHacksSouthlake .gap-8 {
+        gap: 32px;
+      }
+      #lingHacksSouthlake :is(.space-x-8 > :not([hidden]) ~ :not([hidden])) {
+        --tw-space-x-reverse: 0;
+        margin-left: calc(32px * (1 - var(--tw-space-x-reverse)));
+        margin-right: calc(32px * var(--tw-space-x-reverse));
+      }
+      #lingHacksSouthlake .overflow-hidden {
+        overflow: hidden;
+      }
+      #lingHacksSouthlake .rounded-full {
+        border-radius: 9999px;
+      }
+      #lingHacksSouthlake .rounded-lg {
+        border-radius: 24px;
+      }
+      #lingHacksSouthlake .rounded-md {
+        border-radius: 18px;
+      }
+      #lingHacksSouthlake .border-4 {
+        border-width: 4px;
+      }
+      #lingHacksSouthlake .border-neutral-700 {
+        --tw-border-opacity: 1;
+        border-color: rgb(5 56 27 / var(--tw-border-opacity));
+      }
+      #lingHacksSouthlake .bg-neutral-50 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(15 188 90 / var(--tw-bg-opacity));
+      }
+      #lingHacksSouthlake .bg-neutral-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(3 38 18 / var(--tw-bg-opacity));
+      }
+      #lingHacksSouthlake .bg-neutral-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(1 19 9 / var(--tw-bg-opacity));
+      }
+      #lingHacksSouthlake .bg-gradient-to-b {
+        background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+      }
+      #lingHacksSouthlake .bg-gradient-to-r {
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+      }
+      #lingHacksSouthlake .from-purple-800 {
+        --tw-gradient-from: #6b21a8 var(--tw-gradient-from-position);
+        --tw-gradient-to: rgba(107, 33, 168, 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      #lingHacksSouthlake .from-yellow-400 {
+        --tw-gradient-from: #facc15 var(--tw-gradient-from-position);
+        --tw-gradient-to: rgba(250, 204, 21, 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      #lingHacksSouthlake .to-neutral-900 {
+        --tw-gradient-to: #011309 var(--tw-gradient-to-position);
+      }
+      #lingHacksSouthlake .to-pink-400 {
+        --tw-gradient-to: #f472b6 var(--tw-gradient-to-position);
+      }
+      #lingHacksSouthlake .object-cover {
+        object-fit: cover;
+      }
+      #lingHacksSouthlake .p-10 {
+        padding: 40px;
+      }
+      #lingHacksSouthlake .p-6 {
+        padding: 24px;
+      }
+      #lingHacksSouthlake .px-10 {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      #lingHacksSouthlake .px-12 {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      #lingHacksSouthlake .py-3 {
+        padding-bottom: 12px;
+        padding-top: 12px;
+      }
+      #lingHacksSouthlake .py-8 {
+        padding-bottom: 32px;
+        padding-top: 32px;
+      }
+      #lingHacksSouthlake .text-center {
+        text-align: center;
+      }
+      #lingHacksSouthlake .font-title {
+        font-family:
+          Lato,
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          Apple Color Emoji,
+          Segoe UI Emoji,
+          Segoe UI Symbol,
+          Noto Color Emoji;
+      }
+      #lingHacksSouthlake .text-3xl {
+        font-size: 30px;
+        line-height: 36px;
+      }
+      #lingHacksSouthlake .text-6xl {
+        font-size: 60px;
+        line-height: 16px;
+      }
+      #lingHacksSouthlake .text-lg {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      #lingHacksSouthlake .font-bold {
+        font-weight: 700;
+      }
+      #lingHacksSouthlake .font-light {
+        font-weight: 300;
+      }
+      #lingHacksSouthlake .font-medium {
+        font-weight: 500;
+      }
+      #lingHacksSouthlake .font-semibold {
+        font-weight: 600;
+      }
+      #lingHacksSouthlake .leading-tight {
+        line-height: 1.25;
+      }
+      #lingHacksSouthlake .shadow-lg {
+        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+          0 4px 6px -4px var(--tw-shadow-color);
+      }
+      #lingHacksSouthlake .shadow-lg,
+      #lingHacksSouthlake .shadow-md {
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      #lingHacksSouthlake .shadow-md {
+        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+      }
+      #lingHacksSouthlake .shadow-xl {
+        --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+          0 8px 10px -6px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      #lingHacksSouthlake .transition {
+        transition-duration: 0.15s;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+          backdrop-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      #lingHacksSouthlake {
+        font-family: Open Sans !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+      }
+      #lingHacksSouthlake :is(.bg-neutral-50) {
+        color: rgba(0, 0, 0, 0.9) !important;
+      }
+      #lingHacksSouthlake :is(.bg-neutral-800) {
+        color: hsla(0, 0%, 100%, 0.9) !important;
+      }
+      #lingHacksSouthlake :is(.bg-neutral-900) {
+        color: hsla(0, 0%, 100%, 0.9) !important;
+      }
+      #lingHacksSouthlake .hover\:bg-neutral-100:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(15 182 87 / var(--tw-bg-opacity));
+      }
+      #lingHacksSouthlake .hover\:text-neutral-300:hover {
+        --tw-text-opacity: 1;
+        color: rgb(14 171 82 / var(--tw-text-opacity));
+      }
+      @media (min-width: 768px) {
+        #lingHacksSouthlake .md\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+      
+      body {
+        line-height: inherit;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(1 19 9);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="lingHacksSouthlake"> 
+    	
+    	  <header class="w-full flex justify-between items-center px-12 py-8 bg-neutral-900 fixed top-0 left-0 right-0 z-50 shadow-md">
+    	    <div class="font-title text-lg">Linghacks-Southlake</div>
+    	    <nav class="flex space-x-8">
+    	      <a href="#About_us" class="hover:text-neutral-300">ABOUT US</a>
+    	      <a href="#resources" class="hover:text-neutral-300">RESOURCES</a>
+    	      <a href="#contact" class="hover:text-neutral-300">CONTACT</a>
+    	      <a href="#news" class="hover:text-neutral-300">NEWS</a>
+    	    </nav>
+    	  </header>
+    	
+    	  <section class="w-full h-[700px] flex justify-center items-center bg-gradient-to-b from-purple-800 to-neutral-900 mt-[96px]">
+          
+    	    <div class="text-center">
+    	      <h1 class="text-6xl font-bold leading-tight">
+    	        Explore the Opportunities of <br/><br/>
+    	        High School Hackathons with <br/><br/>
+    	        <span class="text-title">LingHacks-Southlake</span>
+    	      </h1>
+    	      <p class="mt-6 mb-6">
+    	        <span class="inline-block h-2 w-48 bg-gradient-to-r from-yellow-400 to-pink-400 rounded-full"></span>
+    	      </p>
+    	      <p class="text-lg mb-12 font-light">Unleash your potential with LingHacks-Southlake</p>
+    	      <button class="text-lg font-medium py-3 px-10 rounded-full bg-neutral-50 hover:bg-neutral-100 shadow-lg transition">
+    	        JOIN US
+    	      </button>
+    	    </div>
+    	  </section>
+    	
+    	  <section class="flex justify-center items-center bg-neutral-900 relative z-10 mt-[-40px]">
+    	    <img src="https://lh5.googleusercontent.com/-AbnXEPxPPCjROKFaEOjVAoxVbVYaRILacopsjsYl0jLiAGM8CVr7EWeVL4FKdMxEJP2ql3k5sKTRfQHVaNvzAbO1_d3lGRCWWO9TJKexLRXa2afpXU7_JdXT-f4-vuoEQ=w1280" alt="LingHacks logo" class="w-[600px] h-[300px] rounded-lg object-cover border-4 border-neutral-700 shadow-xl"/>
+    	  </section>
+    	
+    	  <section id="About_us" class="bg-neutral-900 mt-12 p-10 rounded-lg">
+          <br/>
+          <br/>
+    	    <h2 class="font-title text-3xl mb-8">Who are we?</h2>
+    	    <p class="mb-10">
+    	      LingHacks, a global nonprofit under Hack+, focuses on combining math and language to help students from diverse backgrounds develop skills in technology, problem-solving, and interdisciplinary thinking. We organize hackathons, workshops, and clubs to introduce students to natural language processing (NLP), spark interest in technical and cross-disciplinary careers, and support them in creating lasting social innovations. Recently, we held the fourth edition of the LingHacks hackathon.
+    	    </p>
+    	
+    	    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    	      <div class="bg-neutral-800 p-6 rounded-md">
+    	        <h3 class="font-semibold text-lg">Workshops</h3>
+    	        <p>
+    	          We host computational linguistics workshops nationwide, covering everything from the mathematical foundations of machine learning to creating real-world natural language processing applications. In addition to running our own workshops, we collaborate with partner events and schools by presenting workshops and sharing our curriculum.
+    	        </p>
+    	      </div>
+    	      <div class="bg-neutral-800 p-6 rounded-md">
+    	        <h3 class="font-semibold text-lg">Clubs</h3>
+    	        <p>
+    	          We create curricula for schools worldwide to help them launch Computational Linguistics Clubs. The curriculum includes introductory Python programming and text preprocessing, key mathematical concepts, machine learning and NLP algorithms, tutorials on building NLP applications, and discussions on research papers related to the impact of computational linguistics on society.
+    	        </p>
+    	      </div>
+    	      <div class="bg-neutral-800 p-6 rounded-md">
+    	        <h3 class="font-semibold text-lg">Hackathons</h3>
+    	        <p>
+    	          LingHacks IV, the fourth edition of the world&#x27;s first computational linguistics hackathon for high school students, is set to take place virtually in the spring of 2022.
+    	        </p>
+    	      </div>
+    	    </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+    	  </section>
+    	
+    	  <section id="resources" class="bg-neutral-900 mt-12 p-10 rounded-lg">
+          <br/>
+          <br/>
+    	    <h2 class="font-title text-3xl mb-8">Extra Resources</h2>
+    	    <p class="mb-10">Take a look at our reference materials:</p>
+    	    <div class="flex flex-wrap gap-6">
+    	      <a href="/path/to/download1.pdf" class="bg-neutral-800 p-6 rounded-md">Download Resource 1</a>
+    	      <a href="/path/to/download2.pdf" class="bg-neutral-800 p-6 rounded-md">Download Resource 2</a>
+    	      <a href="/path/to/download3.pdf" class="bg-neutral-800 p-6 rounded-md">Download Resource 3</a>
+    	    </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+    	  </section>
+    	
+    	  <section id="contact" class="bg-neutral-900 mt-12 p-10 rounded-lg">
+    	    <h2 class="font-title text-3xl mb-8">Contact Us</h2>
+    	    <p class="mb-10">Meet our team of passionate individuals:</p>
+    	    <div class="flex flex-wrap gap-8">
+    	      <div class="bg-neutral-800 p-6 rounded-md w-[280px]">
+    	        <h3 class="font-semibold text-lg">Person 1</h3>
+    	        <p>Description</p>
+    	      </div>
+    	      <div class="bg-neutral-800 p-6 rounded-md w-[280px]">
+    	        <h3 class="font-semibold text-lg">Person 2</h3>
+    	        <p>Description</p>
+    	      </div>
+    	      <div class="bg-neutral-800 p-6 rounded-md w-[280px]">
+    	        <h3 class="font-semibold text-lg">Person 3</h3>
+    	        <p>Description</p>
+    	      </div>
+    	      <div class="bg-neutral-800 p-6 rounded-md w-[280px]">
+    	        <h3 class="font-semibold text-lg">Person 4</h3>
+    	        <p>Description</p>
+    	      </div>
+    	    </div>
+    	    <p class="mt-8">Feel free to reach out to any of us for inquiries or collaborations!</p>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+    	  </section>
+    	
+    	  <section id="news" class="bg-neutral-900 mt-12 p-10 rounded-lg">
+    	    <h2 class="font-title text-3xl mb-8">News</h2>
+    	    <p class="mb-8">Please take a look at the latest news below.</p>
+    	  </section>
+    	</div> 
+   
+    
+  </body>
+</html>
