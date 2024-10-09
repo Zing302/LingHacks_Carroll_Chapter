@@ -642,25 +642,87 @@
         }
       }
       
-      body {
-        padding-top: 90px;
-        line-height: inherit;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(1 19 9);
-      }
+  body {
+  padding-top: 4.625em; /* 90px = 5.625em */
+  line-height: inherit;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(1 19 9);
+  font-size: 1rem;
+}
+
+
+.container {
+  width: 100%; /* Full width */
+}
+
+header {
+  padding-left: 3em; /* 48px = 3em */
+  padding-right: 3em; 
+  padding-top: 0.5em; /* 8px = 0.5em */
+  padding-bottom: 0.5em;
+  font-size: 1rem;
+  
+}
+
+.section {
+  height: 43.75em; /* 700px = 43.75em */
+  margin-top: 93.75em; /* 1500px = 93.75em */
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #wrapper {
+    width: 100%;
+    padding-top: 10%;
+  }
+}
+#navMenu {
+    display: none; /* Hide menu by default on mobile */
+}
+.hamburger {
+    font-size: 1.5em; /* Adjust size as needed */
+    background: none;
+    border: none;
+    color: white; /* Change to your desired color */
+    cursor: pointer;
+}
+
+@media (max-width: 600px) { /* Adjust for mobile */
+    #navMenu {
+        padding-top: 10px;
+        display: flex; /* Show the menu when toggled */
+        flex-direction: column; /* Stack links vertically */
+        background-color: rgba(0, 0, 0, 0.8); /* Optional: background for visibility */
+        position: absolute; /* Positioning for dropdown */
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        width: 100%; /* Full width */
+    }
+}
+
+
+
     </style>
   </head>
   <body>
+    <div id="wrapper">
+        
     <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cm1vgrrsw0e6rs5bjzwc9n9lo"></script>
     <div id="lingHacksSouthlake"> 
 
     	  <header class="w-full flex justify-between items-center px-12 py-8 bg-neutral-900 fixed top-0 left-0 right-0 z-50 shadow-md">
     	    <div class="font-title text-lg">LingHacks-Southlake</div>
-    	    <nav class="flex space-x-8">
+    	    <nav id="navMenu" class="flex space-x-8 hidden md:flex">
     	      <a href="#About_us" class="hover:text-neutral-300">ABOUT US</a>
     	      <a href="#resources" class="hover:text-neutral-300">RESOURCES</a>
     	      <a href="#contact" class="hover:text-neutral-300">CONTACT</a>
@@ -671,7 +733,7 @@
     	  <section class="w-full h-[700px] flex justify-center items-center bg-gradient-to-b from-purple-800 to-neutral-900 mt-[1500px]">
           
     	    <div class="text-center">
-    	      <h1 class="text-6xl font-bold leading-tight" style="color:white";>
+    	      <h1 class="text-3xl font-bold leading-tight" style="color:white";>
     	        Explore the Opportunities of <br/><br/>
     	        Computational Linguistics with <br/><br/>
     	        <span class="text-title">LingHacks-Southlake</span>
@@ -683,12 +745,12 @@
     	     <a href="https://www.remind.com/join/linghac?utm_medium=ios"><button class="text-lg font-medium py-3 px-10 rounded-full bg-neutral-50 hover:bg-neutral-100 shadow-lg transition">
     	        JOIN US
     	      </button></a>
-            <br /> <br /> <br />
+            <br /><br /><br>
     	    </div>
     	  </section>
     	
     	  <section class="flex justify-center items-center bg-neutral-900 relative z-10 mt-[-40px]">
-          <br />
+          
     	    <img src="logoLingHacks.png" alt="LingHacks logo" class="w-[600px] h-[300px] rounded-lg object-cover border-4 border-neutral-700 shadow-xl"/>
     	  </section>
     	
@@ -805,8 +867,14 @@
       </div>
     	</div> 
 
-      
+    </div>
    
-    
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('navMenu');
+        menu.classList.toggle('none');
+      }
+      </script>
+      
   </body>
 </html>
